@@ -1,0 +1,108 @@
+p {
+  font-size: 14px;
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+}
+h1 {
+  font-size: 48px;
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+}
+
+a {
+  color: orange;
+}
+
+.highlight {
+  font-size: 75px;
+}
+
+#MyID {
+  font-size: 50px;
+  border: 10px;
+  border-style: dotted;
+  border-color: rgb(0,200,250);
+  padding: 10px;
+
+}
+
+.pic_middle {
+  display: block;
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom:30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.Liste_standard {
+  font-size: 14px;
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #cccccc;
+
+}
+
+.meinrechteck {
+  width: 300px;
+  height: 50px;
+  background: orange;
+  position: fixed;
+  top:70px;
+  right:10px;
+}
+
+.meinrechteck::after {
+  content: "Testblock";
+  display: block;
+  color: white;
+  padding: 20px;
+}
+
+
+.pic_absolute {
+  position: absolute;
+  top:530px;
+  right: 10px;
+  width: 50%;
+}
+
+.rechteck_html {
+  width: 60%;
+  height: 200px;
+  background: #333333;
+  position: absolute;
+  top:500px;
+  right:20px;
+}
+
+.rechteck_html::after {
+  content: "Bildunterschrift";
+  display: block;
+  color: white;
+  padding: 170px;
+}
+
+ul.horizontal {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height:40px;
+  background: #333333;
+  color: white;
+  float: right;
+  display: block;
+}
+
+ul.horizontal li {
+  display: inline-block;
+  text-align: right;
+  font-size: 18px;
+  font-family: Tahoma;
+  padding-top:0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
