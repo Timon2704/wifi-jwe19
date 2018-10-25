@@ -48,21 +48,47 @@
   font-weight: bold;
 }
 
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
 html, body {
   margin: 0;
 }
 
 html * {
   box-sizing: border-border-box;
+}
+
+#logo-left {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 5em;
+  width: 5em;
+  height: 5em;
+}
+
+#logo-left a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: grey url('../img/logo_muthwill.svg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+
+#logo-right {
+  position: absolute;
+  top: 0;
+  left: 10em;
+  width: 9em;
+  height: 5em;
+}
+
+#logo-right a {
+    display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
 }
 
 body {
