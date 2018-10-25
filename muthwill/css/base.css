@@ -1,8 +1,8 @@
 :root {
   --screen-max: 1200px;
-  --base-font: 'Montserrat', sans-serif;
+  --base-font: 'Montserrat', Tahoma, sans-serif;
   --alternative-font: 'Pridi', 'Times New Roman', serif;
-
+  /* Footer */
   --footer-backgound: #525252;
   --footer-top-color: #c2c2c2;
   --footer-top-color-hover: #fff;
@@ -49,12 +49,12 @@
 }
 
 h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 html, body {
@@ -70,7 +70,8 @@ body {
   font-size: 100%;
   display: flex;
   flex-flow: column;
-  min-height: 100vh; /* Body hat volle Viewport-Höhe */
+  min-height: 100vh;
+  /* Body hat volle Viewport-Höhe */
 }
 
 header {
@@ -107,7 +108,7 @@ header h1 {
 main {
   flex: 1;
   background: lightgrey;
-  }
+}
 
 footer {
   background: var(--footer-backgound);
@@ -119,24 +120,20 @@ footer .footer-top {
   font-family: var(--alternative-font);
   font-weight: lighter;
   font-size: 1em;
-  display: flex;
   text-transform: uppercase;
   padding-bottom: 10px;
-  }
-
-footer .footer-left {
-  flex: 1;
 }
 
-footer .footer-right {
-  flex: 1;
-}
+footer .footer-left {}
+
+footer .footer-right {}
 
 /* man kann 2 Elemente hintereinander schreiben, um z.B. alle Listen im Footer anzusprechen */
 footer ul {
   list-style: none;
   padding: 0;
   text-align: left;
+  margin: 0;
 }
 
 footer li {
@@ -153,9 +150,7 @@ footer a:hover {
   text-decoration: none;
 }
 
-ul.list-footer-right {
-  text-align: right;
-}
+ul.list-footer-right {}
 
 footer .footer-bottom {
   font-family: var(--base-font);
@@ -173,3 +168,26 @@ footer .footer-bottom-right {
   flex: 1;
   text-align: right;
 }
+
+@media screen and (min-width: 576px) {
+  footer .footer-top {
+    display: flex;
+  }
+
+  /* Elemente, die genau gleich deklariert sind,
+    kann man mit einem Beistrich verbinden: */
+  footer .footer-left,
+  footer .footer-right {
+    flex: 1;
+  }
+
+  ul.list-footer-right {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
