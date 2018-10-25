@@ -1,24 +1,60 @@
 :root {
   --screen-max: 1200px;
   --base-font: 'Montserrat', sans-serif;
+  --alternative-font: 'Pridi', 'Times New Roman', serif;
+
+  --footer-backgound: #525252;
+  --footer-top-color: #c2c2c2;
+  --footer-top-color-hover: #fff;
+  --footer-bottom-color: #666;
+  --footer-bottom-color-hover: #fff;
 }
 
+/* Verweis auf Hauptschriftart */
 @font-face {
-  font-family: var(--base-font);
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Regular.ttf);
   font-weight: normal;
 }
 
 @font-face {
-  font-family: var(--base-font);
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Light.ttf);
   font-weight: lighter;
 }
 
 @font-face {
-  font-family: var(--base-font);
+  font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Bold.ttf);
   font-weight: bold;
+}
+
+/* Verweis auf Alternativschriftart */
+@font-face {
+  font-family: 'Pridi';
+  src: url(../fonts/Pridi-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Pridi';
+  src: url(../fonts/Pridi-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Pridi';
+  src: url(../fonts/Pridi-Bold.ttf);
+  font-weight: bold;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 html, body {
@@ -31,14 +67,18 @@ html * {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 100%
+  font-size: 100%;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh; /* Body hat volle Viewport-Höhe */
 }
 
 header {
+  font-family: 'Pridi', 'Times New Roman', serif;
+  font-weight: lighter;
   position: relative;
   width: 100%;
   height: 45vw;
-  background: lightgreen;
   overflow: hidden;
 }
 
@@ -50,24 +90,86 @@ header img {
   object-position: center;
 }
 
-header .inner-wrapper {
+.inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;
-  background: red;
+  padding: 0 10px;
 }
 
 header h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 20px 20px;
+  padding: 0 10px;
 }
 
 main {
+  flex: 1;
   background: lightgrey;
-}
+  }
 
 footer {
-  background: #333;
+  background: var(--footer-backgound);
+  padding: 10px 0px;
+  color: c2c2c2;
+}
+
+footer .footer-top {
+  font-family: var(--alternative-font);
+  font-weight: lighter;
+  font-size: 1em;
+  display: flex;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  }
+
+footer .footer-left {
+  flex: 1;
+}
+
+footer .footer-right {
+  flex: 1;
+}
+
+/* man kann 2 Elemente hintereinander schreiben, um z.B. alle Listen im Footer anzusprechen */
+footer ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+footer li {
+  padding-bottom: 5px;
+}
+
+footer a {
+  color: var(--footer-top-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--footer-top-color-hover);
+  text-decoration: none;
+}
+
+ul.list-footer-right {
+  text-align: right;
+}
+
+footer .footer-bottom {
+  font-family: var(--base-font);
+  font-size: 0.8em;
+  display: flex;
+  color: var(--footer-bottom-color);
+  padding: 10px 10px;
+}
+
+footer .footer-bottom-left {
+  flex: 1;
+}
+
+footer .footer-bottom-right {
+  flex: 1;
+  text-align: right;
 }

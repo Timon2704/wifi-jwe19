@@ -2,12 +2,15 @@
 <html lang="de" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"> <!-- Zeichensatz; uft-8 = lateinisch mit Umlauten -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- wichtig für Responsive Websites; Skalierung wird dem Gerät angepasst -->
   <link rel="stylesheet" href="css/base.css" />
   <title>Muthwill - Der Malermeister</title>
 </head>
 
 <body>
+
+  <!-- Anfang Navigationsbereich -->
   <nav>
     <ul>
       <li>
@@ -25,60 +28,77 @@
     </ul>
   </nav>
 
-  <header class="inner-wrapper">
-        <img src="img/header_1.jpg" alt="Fassadenanstriche" />
-        <div class="inner-wrapper">
-          <h1>Fassadenanstriche mit Farbgestaltung</h1>
-        </div>
+  <header>
+    <img src="img/header_1.jpg" alt="Fassadenanstriche" />
+    <div class="inner-wrapper">
+      <h1>Fassadenanstriche mit Farbgestaltung</h1>
+    </div>
   </header>
 
   <main />
-
+<p>
+  
+</p>
   </main />
 
+  <!-- Anfang Footerbereich -->
   <footer>
-    <div class="footer-top">
-      <nav class="footer-left">
-        <ul>
-          <li>
-            <a href="#">Malermeister</a>
-          </li>
-          <li>
-            <a href="#">Leistungen und Service</a>
-          </li>
-          <li>
-            <a href="#">Farbenfachgeschäft</a>
-          </li>
-          <li>
-            <a href="#">Farben mischen</a>
-          </li>
-        </ul>
-      </nav>
 
-      <nav class="footer-right">
-        <ul>
-          <li>
-            <a href="#">Kontakt</a>
-          </li>
-          <li>
-            <a href="#">Impressum</a>
-          </li>
-          <li>
-            <a href="#">Datenschutz & Cookies</a>
-          </li>
-          <li>
-            <a href="#">Anfahrtsplan</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
+    <!-- Es können auch mehrere Klassen kombiniert werden -->
+    <div class="footer-top inner-wrapper">
+
       <div class="footer-left">
 
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Malermeister</a>
+            </li>
+            <li>
+              <a href="#">Leistungen und Service</a>
+            </li>
+            <li>
+              <a href="#">Farbenfachgeschäft</a>
+            </li>
+            <li>
+              <a href="#">Farben mischen</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="footer-right">
 
+      <div class="footer-right">
+        <nav>
+          <ul class="list-footer-right">
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+            <li>
+              <a href="#">Impressum</a>
+            </li>
+            <li>
+              <a href="#">Datenschutz & Cookies</a>
+            </li>
+            <li>
+              <a href="#">Anfahrtsplan</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </div>
+
+
+    <div class="footer-bottom inner-wrapper">
+
+        <div class="footer-bottom-left">
+          2018 &copy; Malermeister Muthwill
+        </div>
+
+        <div class="footer-bottom-right">
+          Design by Timon Scheibner
+        </div>
+
+    </div>
 
     </div>
 
