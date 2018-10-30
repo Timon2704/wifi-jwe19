@@ -2,6 +2,9 @@
   --screen-max: 1200px;
   --base-font: 'Montserrat', Tahoma, sans-serif;
   --alternative-font: 'Pridi', 'Times New Roman', serif;
+  --light-grey: #d3d3d3;
+  --medium-grey: #808080;
+  --dark-grey: #404040;
   /* Footer */
   --footer-backgound: #525252;
   --footer-top-color: #c2c2c2;
@@ -44,6 +47,12 @@
 
 @font-face {
   font-family: 'Pridi';
+  src: url(../fonts/Pridi-ExtraLight.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Pridi';
   src: url(../fonts/Pridi-Bold.ttf);
   font-weight: bold;
 }
@@ -62,7 +71,7 @@ html * {
   top: 0;
   left: 5em;
   width: 5em;
-  height: 5em;
+  height: 80px;
 }
 
 #logo-left a {
@@ -78,17 +87,28 @@ html * {
 
 #logo-right {
   position: absolute;
+  box-sizing: border-box;
+  z-index: 100;
   top: 0;
   left: 10em;
   width: 9em;
-  height: 5em;
+  height: 7em;
 }
 
 #logo-right a {
-    display: block;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
   background-color: #fff;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
 }
 
 body {
@@ -100,9 +120,7 @@ body {
   /* Body hat volle Viewport-Höhe */
 }
 
-header {
-  font-family: 'Pridi', 'Times New Roman', serif;
-  font-weight: lighter;
+header #main-header {
   position: relative;
   width: 100%;
   height: 45vw;
@@ -112,7 +130,7 @@ header {
 header img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 45vw;
   object-fit: cover;
   object-position: center;
 }
@@ -125,15 +143,46 @@ header img {
 }
 
 header h1 {
+  font-family: 'Pridi', 'Times New Roman', serif;
+  font-size: 2em;
+  line-height: 0.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 0 10px;
 }
 
+header #main-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+header #main-header .inner-wrapper,
+.content-element. .inner-wrapper,
+header #main-header h1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 main {
   flex: 1;
-  background: lightgrey;
+}
+
+section .content-elemnt {}
+
+main header h2 {
+  font-family: 'Pridi', 'Times New Roman', serif;
+  font-weight: lighter;
+  font-size: 3em;
+  color: var(--dark-grey);
+  text-transform: uppercase;
 }
 
 footer {
@@ -214,6 +263,17 @@ footer .footer-bottom-right {
 
 @media screen and (min-width: 768px) {}
 
+header h1 {
+  font-size: 60px;
+  line-height: 50px;
+}
+
 @media screen and (min-width: 992px) {}
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+
+  header h1 {
+    font-size: 90px;
+    line-height: 70px;
+  }
+}
