@@ -10,7 +10,7 @@ section.content-element h2 {
 
 .content-element .teaser {
   position: relative;
-  /*für verschiedene Browser notwendig: webkit*/
+  für verschiedene Browser notwendig: webkit
   background:
     -webkit-linear-gradient(rgba(255, 125, 0, 0.8), rgba(255, 125, 0, 0.8)),
     url(../img/example-content-image.jpg);
@@ -51,6 +51,14 @@ section.content-element h2 {
 .content-element .content-text a.button:hover {
   opacity: 0.6;
 }
+
+#Malermeister .teaser {
+  position: relative;
+  min-height: 25vw;
+  padding: 1em 0;
+  color: white;
+  background-image: url(../img/example-content-image.jpg);
+  }
 
 @media screen and (min-width: 992px) {
   .content-element .teaser p {
