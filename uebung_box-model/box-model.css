@@ -1,0 +1,37 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightblue;
+}
+
+div.around {
+  background: orange;
+  padding: 20px;
+  margin: 40px;
+}
+
+a#boxModelLink-left {
+  display: block;
+  width: 300px;
+  height: 300px;
+  box-sizing: content-box;
+  border: 25px solid tan;
+  padding: 10px;
+  background: green;
+  box-shadow:  0 0 10px 5px #000;
+}
+
+a#boxModelLink-right {
+  display: block;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  border: 25px solid tan;
+  padding: 10px;
+  background: green;
+}

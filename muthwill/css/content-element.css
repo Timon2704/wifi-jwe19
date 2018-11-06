@@ -10,9 +10,7 @@ section.content-element h2 {
 
 .content-element .teaser {
   position: relative;
-  für verschiedene Browser notwendig: webkit
-  background:
-    -webkit-linear-gradient(rgba(255, 125, 0, 0.8), rgba(255, 125, 0, 0.8)),
+  für verschiedene Browser notwendig: webkit background: -webkit-linear-gradient(rgba(255, 125, 0, 0.8), rgba(255, 125, 0, 0.8)),
     url(../img/example-content-image.jpg);
   background:
     linear-gradient(rgba(255, 125, 0, 0.8), rgba(255, 125, 0, 0.8)),
@@ -57,8 +55,23 @@ section.content-element h2 {
   min-height: 25vw;
   padding: 1em 0;
   color: white;
-  background-image: url(../img/example-content-image.jpg);
-  }
+}
+
+#brillux .teaser {
+  position: relative;
+  min-height: 25vw;
+  padding: 1em 0;
+  color: inherit;
+  background-image: none;
+}
+
+#brillux.button a {
+  background: #00c4d3;
+}
+
+#brillux a.button:hover {
+  opacity: 0.6;
+}
 
 @media screen and (min-width: 992px) {
   .content-element .teaser p {
@@ -72,6 +85,22 @@ section.content-element h2 {
   .content-element .content-text img {
     max-width: 75%;
   }
+
+  #brillux p {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+
+  header#main-header h1,
+  .content-element > header,
+  .content-element .teaser . inner-wrapper,
+  .content-element .content-text {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -83,5 +112,4 @@ section.content-element h2 {
   .content-element .content-text img {
     max-height: 10em;
   }
-
 }
