@@ -18,19 +18,19 @@
 .form_input {
   display: block;
   width: 70%;
-  max-width: 600px;
-  min-height: 2em;
+  max-width: 500px;
+  min-height: 2.5em;
   font-family: var(--base-font);
 }
 
 .form_button_submit {
-  background-color: #ff6200;
+  background-color: #ff8000;
   color: white;
   border: none;
   display: block;
   padding: 15px 50px;
   width: 70%;
-  max-width: 600px;
+  max-width: 500px;
   margin-right: auto;
 }
 
@@ -45,7 +45,6 @@
   }
 
   .form_input {
-    min-height: 2.5em;
     width: 100%;
   }
 }

@@ -75,6 +75,11 @@ body {
   min-height: 100vh;
 }
 
+main a {
+  text-decoration: none;
+  color: #ff8000;
+}
+
 .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
