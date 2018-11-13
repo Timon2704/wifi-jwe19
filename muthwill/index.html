@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- wichtig für Responsive Websites; Skalierung wird dem Gerät angepasst -->
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/content-element.css" />
+  <link rel="stylesheet" href="css/contact-form.css" />
   <title>Muthwill - Der Malermeister</title>
 </head>
 
@@ -144,12 +145,55 @@
             aamoo!
           </p>
 
-          <button class="button-standard">Kontaktieren Sie uns</button>
         </div>
 
 
       </div>
     </section>
+
+    <section class="content-element contact-form">
+
+      <form class="inner-wrapper contact-form" action="index.html" method="post">
+
+        <div class="form_field">
+          <label class="form_label" for="nameID">Name:*</label>
+          <input class="form_input" type="text" name="name" id="nameID" value="" placeholder="Vorname Nachname">
+        </div>
+
+
+        <div class="form_field">
+          <label class="form_label" for="firmaID">Firma:</label>
+          <input class="form_input" type="text" name="firma" id="firmaID" value="" placeholder="Firma">
+        </div>
+
+        <div class="form_field">
+          <label class="form_label" for="emailID">E-Mail:*</label>
+          <input class="form_input" type="email" name="email" id="emailID" value="" placeholder="meine@email.com">
+        </div>
+
+        <div class="form_field">
+          <label class="form_label" for="betreffID">Betreff:*</label>
+          <input class="form_input" type="text" name="betreff" id="emailID" value="" placeholder="Betreff">
+        </div>
+
+        <div class="form_field">
+          <label class="form_label" for="messageID">Ihr Anliegen:*</label>
+          <textarea class="form_input" name="message" id="messageID" rows="8" cols="80" placeholder="Nachricht"></textarea>
+        </div>
+
+
+        <div class="form_field">
+          <label class="form_label" for="submitID"></label>
+          <button class="form_button_submit" type="submit" name="submit" id="submitID">Absenden</button>
+        </div>
+
+
+      </form>
+
+    </section>
+
+
+
   </main />
 
   <!-- Anfang Footerbereich -->

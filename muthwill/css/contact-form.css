@@ -1,0 +1,51 @@
+.contact-form {
+  background-color: var(--dark-grey);
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form_field {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.form_label {
+  display: block;
+  width: 30%;
+}
+
+.form_input {
+  display: block;
+  width: 70%;
+  max-width: 600px;
+  min-height: 2em;
+  font-family: var(--base-font);
+}
+
+.form_button_submit {
+  background-color: #ff6200;
+  color: white;
+  border: none;
+  display: block;
+  padding: 15px 50px;
+  width: 70%;
+  max-width: 600px;
+  margin-right: auto;
+}
+
+@media (max-width: 576px) {
+  .form_field {
+    display: block;
+  }
+
+  .form_label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .form_input {
+    min-height: 2.5em;
+    width: 100%;
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formular</title>
+</head>
+
+<body>
+
+
+  <form method="get" action="form.html">
+    <p>
+
+      <label for="femaleID">
+        Frau
+      </label>
+      <input type="radio" name="gender" id="femaleID" value="female">
+
+      <label for="maleID">
+        Herr
+      </label>
+      <input type="radio" name="gender" id="maleID" value="male">
+
+    </p>
+
+    <p>
+      <label for="firstnameID">Vorname:</label>
+      <input type="text" name="firstname" id="firstnameID" value="" placeholder="Vorname">
+    </p>
+    <p>
+      <label for="lastnameID">Nachname:</label>
+      <input type="text" name="lastname" id="lastnameID" value="" placeholder="Nachname">
+    </p>
+    <p>
+      <label for="emailID">E-Mail::</label>
+      <input type="email" name="email" id="emailID" value="" placeholder="info@example.com">
+    </p>
+
+    <p>
+      <label for="passwordID">Passwort:</label>
+      <input type="password" name="password" id="passwordID" value="">
+    </p>
+
+    <p>
+      <label for="socks">Wie viele Paar Socken kannst du gleichzeitig tragen?</label>
+      <input type="number" name="socks" id="socksID" value="" min="4" max="30" step="2">
+    </p>
+
+    <p>
+      <label for="animalfriedID">Welcher Typ Mensch bist du?</label><br>
+        <select name="animalfriend" id="animalfriedID" multiple>
+        <option value="cat">Katzenmensch</option>
+        <option value="dog">Hundemensch</option>
+        <option value="hamster">Hamstermensch</option>
+        <option value="bird">Vogelmensch</option>
+      </select>
+      <br>Mit gedrückter SHIFT-Taste können Sie mehrere Werte auswählen.
+    </p>
+
+    <p>
+      <label for="animalfriedID">Welcher Typ Mensch bist du?</label><br>
+            <select name="animalfriend" id="animalfriedID" >
+        <option value="cat">Katzenmensch</option>
+        <option value="dog">Hundemensch</option>
+        <option value="hamster">Hamstermensch</option>
+        <option value="bird">Vogelmensch</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="textareaID">Sonstige Infos:</label>
+      <textarea name="textarea" id="textareaID" rows="8" cols="80"></textarea>
+    </p>
+
+    <p>
+    <input type="checkbox" name="agb" id="agbID" value="ok" required>
+    <label for="textareaID">AGB, ja ok!</label>
+    </p>
+
+    <!-- Button: es gibt 2 Varianten: input oder Submit -->
+    <input type="submit" name="submit" in="submitID" value="Jetzt absenden!" ></input>
+    <button type="submit" name="submit">Senden</button>
+
+    <p>
+    <input type="reset" name="reset" id="resetId" value="Zurücksetzen">
+    </p>
+
+  </form>
+
+</body>
+
+</html>
