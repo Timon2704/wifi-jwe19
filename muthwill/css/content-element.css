@@ -1,46 +1,35 @@
-section.content-element {
+.content-element {
   display: block;
   position: relative;
 }
 
-section.content-element h2 {
-  padding-top: 2.5em;
+.content-element h2 {
+  padding-top: 2em;
   font-weight: lighter;
 }
 
-.content-element .teaser {
+.teaser {
   position: relative;
   background-color: #ff8000;
-  min-height: 25vw;
+  min-height: 50vw;
   padding: 1em 0;
   color: white;
 }
 
-#Malermeister .teaser {
-  background-color: rgba(255, 125, 0, 0.8);
-}
-
-#Kontakt .teaser {
-  min-height: 0vw;
-}
-
-.content-element .teaser p {
-  position: relative;
-  z-index: 10;
-}
-
-.content-element .content-text {
+.content-text {
   padding: 1rem 0;
 }
 
-.content-element .content-text p {}
-
-.content-element .content-text img {
+.content-text img {
   max-width: 100%;
   max-height: 10em;
 }
 
-.content-element .content-text a.button {
+div.button-center {
+  text-align: center;
+}
+
+a.button {
   display: inline-block;
   padding: 1em 2em;
   background: #ff8000;
@@ -49,48 +38,110 @@ section.content-element h2 {
   margin: 2em 0;
 }
 
-.content-element .content-text a.button:hover {
-  opacity: 0.6;
+a.button:hover {
+  opacity: 0.7;
+}
+
+.banner-leistungen {
+  display: flex;
+}
+
+.leistungen-title h3 {
+  font-family: var(--alternative-font);
+  font-weight: normal;
+  font-size: 1.3em;
+  line-height: 1em;
+  color: var(--dark-grey);
+  text-align: center;
+  padding: 0 5em;
+}
+
+.leistungen-image {
+  max-width: 100%;
+  display: block;
+}
+
+.leistungen-left {
+  display: block;
+  flex: 1;
+}
+
+.leistungen-middle {
+  display: block;
+  flex: 1;
+}
+
+.leistungen-right {
+  display: block;
+  flex: 1;
+}
+
+.leistungen-button {
+  display: block;
+  background: #00c4d3;
+  text-align:center;
+  color: white;
+  padding: 0.5em 0;
+}
+
+.leistungen-button p {
+  margin: 0;
+}
+
+.leistungen-middle .leistungen-button {
+  background: #00838d;
+}
+
+.leistungen-right .leistungen-button {
+  background: #004d53;
+}
+
+/* Hover-Effekt für Leistungs-Banner */
+
+.leistungen-left:hover {
+  opacity: .6;
+}
+
+.leistungen-middle:hover {
+  opacity: .6;
+}
+
+.leistungen-right:hover {
+  opacity: .6;
+}
+
+#malermeister .teaser {
+  background-color: rgba(255, 125, 0, 0.8);
+  min-height: 100%;
+}
+
+#brillux header img {
+  width: 100%;
 }
 
 #brillux .button {
   background: #00c4d3;
-  align-items: center;
 }
 
-#Malermeister .teaser {
-  position: relative;
-  min-height: 25vw;
-  padding: 1em 0;
-  color: white;
+#leistungen-und-service .teaser {
+  background-color: #004d53;
+  min-height: 15vw;
 }
 
-#brillux .teaser {
-  position: relative;
-  min-height: 25vw;
-  padding: 1em 0;
-  color: inherit;
-  background-image: none;
-}
-
-#brillux.button a {
-  background: #00c4d3;
-}
-
-#brillux a.button:hover {
-  opacity: 0.6;
+#kontakt .teaser {
+  min-height: 0vw;
 }
 
 @media screen and (min-width: 992px) {
-  .content-element .teaser p {
-    max-width: 55%;
+  .teaser p {
+    max-width: 35%;
   }
 
-  .content-element .content-text p {
+  .content-text p {
     max-width: 75%;
   }
 
-  .content-element .content-text img {
+  .content-text img {
     max-width: 75%;
   }
 
@@ -102,22 +153,15 @@ section.content-element h2 {
 
 @media screen and (max-width: 1150px) {
 
-  header#main-header h1,
-  .content-element > header,
-  .content-element .teaser . inner-wrapper,
-  .content-element .content-text {
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .content-element .teaser {
+  .teaser {
     min-height: none;
     max-height: 60vw;
   }
 
-  .content-element .content-text img {
+  .content-text img {
     max-height: 10em;
   }
 }
