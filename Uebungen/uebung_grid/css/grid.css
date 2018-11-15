@@ -1,0 +1,89 @@
+html {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  grid-template-areas:
+  'header-menu header-contact icon-retailer'
+  'menu contact icon-retailer'
+  'menu contact icon-retailer'
+  'menu contact icon-onlineshop'
+  'menu contact icon-onlineshop'
+  'menu contact-btn icon-onlineshop'
+}
+
+.item-1 {
+  grid-area: header-menu;
+}
+
+.item-2 {
+  grid-area: menu;
+}
+
+.item-2 h5 {
+  text-transform: uppercase;
+}
+
+.item-1 p, .item-3 p {
+  color: #999;
+}
+
+.item-2 {
+  list-style:
+}
+
+.item-3 {
+  grid-area: header-contact;
+}
+
+.item-4 {
+  grid-area: contact;
+}
+.item-4 a {
+  color: red;
+}
+
+.item-5 {
+  grid-area: contact-btn;
+}
+
+.item-5 a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: solid 2px black;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.item-5 a:hover {
+  background: black;
+  color: white;
+}
+
+.item-6 {
+  grid-area: icon-retailer;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item-7 {
+  grid-area: icon-onlineshop;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item-6:hover, .item-7:hover {
+  color: red;
+}
+
+.icons {
+  font-size: 50px;
+}
