@@ -44,6 +44,7 @@ a.button:hover {
 
 .banner-leistungen {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .leistungen-title h3 {
@@ -62,17 +63,14 @@ a.button:hover {
 }
 
 .leistungen-left {
-  display: block;
   flex: 1;
 }
 
 .leistungen-middle {
-  display: block;
   flex: 1;
 }
 
 .leistungen-right {
-  display: block;
   flex: 1;
 }
 
@@ -108,6 +106,35 @@ a.button:hover {
 
 .leistungen-right:hover {
   opacity: .6;
+}
+
+
+
+.grid-container-leistungen {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  width: 100%;
+}
+
+.grid-container-leistungen a:hover {
+  opacity: .6;
+}
+
+.item-left-title, .item-middle-title, .item-right-title  {
+  grid-column:1 / span 1;
+  grid-row:1 / span 1;
+}
+
+.item-left-image, .item-middle-image, .item-right-image {
+  grid-column:1 / span 1;
+  grid-row:3 / span 1;
+  width: 100%
+}
+
+.item-left-button, .item-middle-button, .item-right-button {
+  grid-column:1 / span 1;
+  grid-row:2 / span 1;
 }
 
 #malermeister .teaser {
