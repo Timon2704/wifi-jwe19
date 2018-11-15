@@ -108,8 +108,6 @@ a.button:hover {
   opacity: .6;
 }
 
-
-
 .grid-container-leistungen {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -129,7 +127,10 @@ a.button:hover {
 .item-left-image, .item-middle-image, .item-right-image {
   grid-column:1 / span 1;
   grid-row:3 / span 1;
-  width: 100%
+  max-width: 100%;
+  min-height: 10em;
+  overflow: hidden;
+  z-index: -100;
 }
 
 .item-left-button, .item-middle-button, .item-right-button {
