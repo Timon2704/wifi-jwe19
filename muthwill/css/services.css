@@ -1,0 +1,69 @@
+.banner-services {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 40px 0;
+}
+
+.services-col-1, .services-col-2 {
+  width: 100%;
+  opacity: .6;
+}
+
+.services-title h3 {
+  font-family: var(--alternative-font);
+  font-weight: normal;
+  font-size: 1.3em;
+  line-height: 1em;
+  color: var(--dark-grey);
+  text-align: center;
+  padding: 0 1em;
+}
+
+.services-image {
+  width: 100%;
+  display: block;
+}
+
+.services-button {
+  display: block;
+  background: #00c4d3;
+  text-align:center;
+  color: white;
+  padding: 0.5em 0;
+}
+
+.services-button p {
+  margin: 0;
+}
+
+#services-middle div.services-button {
+  background: #00838d;
+}
+
+#services-right div.services-button {
+  background: #004d53;
+}
+
+/* Hover-Effekt für Leistungs-Banner */
+
+.services-col-1:hover, .services-col-2:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+
+  .banner-services {
+    flex-wrap: nowrap;
+  }
+
+  .services-col-1 {
+    width: 33.333%;
+  }
+
+  .services-col-2 {
+    width: 50%;
+  }
+
+}
