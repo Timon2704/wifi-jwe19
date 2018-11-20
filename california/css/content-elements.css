@@ -1,0 +1,58 @@
+.content-heading-home {
+  text-align: center;
+}
+
+.content-heading-home h2, .content-heading-home p {
+  margin: 0;
+}
+
+.banner-reiseziele {
+  display: flex;
+  margin: 50px 0;
+}
+
+.banner-col-3-left, .banner-col-3-middle, .banner-col-3-right {
+  display: inline-block;
+  width: 33.333%;
+  text-align: center;
+}
+
+.banner-image img{
+  width: 100%
+}
+
+.banner-description {
+  width: 100%;
+
+}
+
+.banner-description p {
+  max-width: 60%;
+  margin: 10px auto;
+}
+
+.banner-link a {
+  color: var(--primary-red);
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+
+.banner-col-3-left {
+  margin-right: 5px;
+}
+
+.banner-col-3-right {
+  margin-left: 5px;
+}
+
+.banner-col-3-middle {
+  margin: 0 5px;
+}
+
+}
+
+@media (min-width: 1200px) {}

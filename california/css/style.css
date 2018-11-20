@@ -1,0 +1,260 @@
+:root {
+  --primary-red: #b71234;
+
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?gn4kle');
+  src:  url('fonts/icomoon.eot?gn4kle#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gn4kle') format('truetype'),
+    url('fonts/icomoon.woff?gn4kle') format('woff'),
+    url('fonts/icomoon.svg?gn4kle#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open_Sans/OpenSans-SemiBold.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  font-family:  'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+  color: var(--primary-red);
+}
+
+.inner-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.navigation-bar {
+  background-color: white;
+}
+
+#logo-top {
+  display: inline-block;
+  float: left;
+  height: 3.5em;
+}
+
+#logo-top img {
+  height: 2.5em;
+  padding: 0.5em 0;
+}
+
+#logo-top {
+  clear:both;
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 4em;
+}
+
+.main-navigation li {
+  padding: 0;
+  float:right;
+}
+
+.main-navigation a {
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1em;
+  color: black;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  color: #999;
+}
+
+.main-navigation a.active {
+  color: var(--primary-red);
+}
+
+.header-home {
+  position: relative;
+  background-image: url('../img/goldengatebridge.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 30vw;
+  background-color: #333;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.header-home-text {
+  padding: 20vw 0 10vw 0;
+}
+
+.header-home-text p {
+  margin: -5px 0;
+}
+
+.header-home-text h1 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.img-california {
+position: absolute;
+right: 0;
+bottom: -4em;
+height: 8em;
+z-index: 20;
+}
+
+.background-banner {
+  position: absolute;
+  right: 0;
+  margin-right: 100px;
+  bottom: -2.5em;
+  height: 5em;
+  width: 38em;
+  z-index: 10;
+}
+
+.sub-header h2 {
+  position: absolute;
+  right: 0;
+  margin-right: 200px;
+  bottom: -1.25em;
+  color: black;
+  font-size: 1.2em;
+  z-index: 15;
+}
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+
+  .header-home-text p {
+    max-width: 50%;
+  }
+
+}
+
+@media (min-width: 1200px) {}

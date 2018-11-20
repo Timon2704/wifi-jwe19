@@ -1,0 +1,42 @@
+.entry {
+  display: block;
+}
+
+.entry h2 {
+  color: var(--primary-red);
+  margin-bottom: 0;
+}
+
+.entry-main {
+  display: flex;
+}
+
+.entry-text {
+  display: inline-block;
+  width: 70%;
+  margin: 1em 0;
+}
+
+.entry-text p {
+  margin: 0 auto;
+}
+
+.entry-img {
+  display: inline-block;
+  width: 30%;
+  margin: 1em 0;
+}
+
+.entry-img img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
