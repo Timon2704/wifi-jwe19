@@ -7,14 +7,15 @@
 }
 
 .banner-reiseziele {
-  display: flex;
+  display: block;
   margin: 50px 0;
 }
 
 .banner-col-3-left, .banner-col-3-middle, .banner-col-3-right {
-  display: inline-block;
-  width: 33.333%;
+  display: block;
+  width: 100%;
   text-align: center;
+  margin: 3em 0;
 }
 
 .banner-image img{
@@ -41,16 +42,29 @@
 
 @media (min-width: 992px) {
 
+  .banner-reiseziele {
+    display: flex;
+  }
+
 .banner-col-3-left {
+  margin-top: 0;
   margin-right: 5px;
 }
 
 .banner-col-3-right {
+  margin-top: 0;
   margin-left: 5px;
 }
 
 .banner-col-3-middle {
   margin: 0 5px;
+}
+
+.banner-col-3-left, .banner-col-3-middle, .banner-col-3-right {
+  display: inline-block;
+  width: 33.333%;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 }
