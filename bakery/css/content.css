@@ -1,0 +1,39 @@
+.siegel img {
+  position: absolute;
+  height: 10rem;
+  right: 2rem;
+  bottom: -5rem;
+}
+
+#unser-sortiment h1 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.grid-sortiment {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "item-1 item-2 item-3 item-4";
+  grid-column-gap: 10px;
+  padding-bottom: 50px;
+}
+
+.item-1 {
+  grid-area: item-1;
+}
+
+.item-2 {
+  grid-area: item-2;
+}
+
+.item-3 {
+  grid-area: item-3;
+}
+
+.item-4 {
+  grid-area: item-4;
+}
+
+.item-1 img, .item-2 img, .item-3 img, .item-4 img {
+  width: 100%;
+}

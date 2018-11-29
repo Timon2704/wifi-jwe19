@@ -1,0 +1,90 @@
+/*var*/
+:root {
+    --primary: #D0B085;
+    --secondary: #707070;
+
+    --screen-max: 1140px;
+
+    /*BUTTON VARIABLEN*/
+    --btn-border: solid var(--brown) 2px;
+    --btn-padding: 0.75em 1.2em 0.45em;
+    --btn-margin: 1em auto;
+
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.inner-wrapper {
+  position: relative;
+  max-width: var(--screen-max);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.background-white {
+  background: white;
+}
+
+div.center-align, .center-align p, .center-align h1,  .center-align h2, .center-align h3,
+.center-align h4, .center-align h5, .center-align h6, .center-align a {
+  text-align: center;
+}
+
+/* -- Navigation -- */
+
+.top {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 5000;
+}
+
+.mainnav {
+  background-color: white;
+  padding: 10px;
+  height: 5rem;
+}
+
+.logo {
+  float: left;
+  height: 3rem;
+}
+
+.mainnav ul {
+  list-style: none;
+}
+
+
+.nav-item li {
+  color: var(--secondary);
+  padding: 1em 1em;
+  float: right;
+}
+
+/* -- Main-Slider -- */
+
+.main-slider {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-slider img {
+  width: 100%;
+  position: fixed;
+  z-index: -10;
+  background: none;
+}
+
+@media (min-width: 576px) {  }
+
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) {  }

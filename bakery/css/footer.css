@@ -1,0 +1,19 @@
+.footer-top {
+  background: var(--primary);
+  color: white;
+}
+
+.footer-left {
+  display: inline-block;
+  width: 50%;
+}
+
+.footer-right {
+  display: inline-block;
+  width: 50%;
+}
+
+.footer-bottom {
+  background: var(--secondary)
+  color: white;
+}
