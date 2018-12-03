@@ -1,6 +1,6 @@
-section.title {
+.title {
   position: relative;
-  height: 100vh;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -17,18 +17,22 @@ img.img-title {
 }
 
 img.siegel {
-  height: 7rem;
+  height: 8rem;
   position: absolute;
   right: 0;
-  bottom: 0;
-  transform: translateY(50%);
+  top: 0;
+  transform: translateY(-50%);
   z-index: 100;
+  margin-top: -100px;
 }
 
 div.grid-sortiment {
   display: grid;
-  grid-template-areas: "sort-item1 sort-item2 sort-item3 sort-item4";
+  grid-template-areas:
+  "sort-item1 sort-item2"
+  "sort-item3 sort-item4";
   grid-column-gap: 10px;
+  grid-row-gap: 10px;
   padding: 30px 0 50px;
 }
 
@@ -89,7 +93,127 @@ div.grid-sortiment {
 .sortiment-description:hover {
   opacity: 0.9;
 }
+
 .sortiment-description:hover h2 {
   opacity: 1;
   color: var(--primary);
+}
+
+.sortiment-description a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-left {
+  flex: 1;
+  display: block;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.member-left p {
+  text-align: right;
+  margin: 0;
+}
+
+.member-left img {
+  display: block;
+  max-width: 100%;
+}
+
+.member-right {
+  flex: 1;
+  display: block;
+  padding: 0 20px;
+}
+
+.member-right p {
+  text-align: left;
+  margin: 0;
+}
+
+.member-right img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-areas:
+  "img1 img2 img3 img3"
+  "img4 img2 img3 img3"
+  "img5 img6 img6 img7"
+  "img5 img6 img6 img7";
+  grid-row: 200px;
+}
+
+
+.gallery-img-1 {
+  grid-area: img1;
+  overflow: hidden;
+}
+
+.gallery-img-2 {
+  grid-area: img2;
+  overflow: hidden;
+}
+
+.gallery-img-43{
+  grid-area: img3;
+  overflow: hidden;
+}
+
+.gallery-img-4 {
+  grid-area: img4;
+  overflow: hidden;
+}
+
+.gallery-img-5 {
+  grid-area: img5;
+  overflow: hidden;
+}
+
+.gallery-img-6 {
+  grid-area: img6;
+  overflow: hidden;
+}
+
+.gallery-img-7 {
+  grid-area: img7;
+  overflow: hidden;
+}
+
+.gallery-img-1 img, .gallery-img-2 img, .gallery-img-3 img, .gallery-img-4 img,
+.gallery-img-5 img, .gallery-img-6 img, .gallery-img-7 img {
+  display: block;
+  min-width: 100%;
+}
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {
+  div.grid-sortiment {
+    grid-template-areas: "sort-item1 sort-item2 sort-item3 sort-item4";
+  }
+}
+
+
+@media (min-width: 1200px) {
+  #titelbild-home {
+    height: 100vh;
+  }
 }
