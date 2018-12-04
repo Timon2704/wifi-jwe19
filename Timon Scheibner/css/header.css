@@ -1,0 +1,102 @@
+.top {
+  position: inherit;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: block;
+  height: auto;
+  overflow: hidden;
+}
+
+.logo-box {
+  box-sizing: content-box;
+  display: block;
+  height: 60px;
+  padding: 2rem 0;
+}
+
+.logo-box img {
+  display: block;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.navigation-box {
+  display: block;
+  background: var(--primary);
+}
+
+.navigation-box a {
+  display: block;
+  line-height: 1rem;
+  color: #000;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-weight: 700;
+}
+
+
+
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {
+
+  .top {
+    position: fixed;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+
+  .logo-box {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0;
+  }
+
+  .logo-box img {
+    margin: 0 1rem;
+  }
+
+  .navigation-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    background: none;
+  }
+
+  .navigation-box a {
+    display: inline-block;
+    line-height: 80px;
+  }
+
+  .navigation-box a:hover {
+    background: var(--primary);
+  }
+
+}
+
+
+@media (min-width: 992px) {}
+
+
+@media (min-width: 1200px) {
+
+  .logo-box img {
+    margin: 0 1rem 0 0;
+  }
+
+}

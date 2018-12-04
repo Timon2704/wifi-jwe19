@@ -1,0 +1,170 @@
+:root {
+
+/* Farben*/
+  --primary: #CDE8EA;
+  --light-grey: #A2A2A2;
+  --grey: #3C3C3C;
+
+  /* Screengröße */
+  --screen-max: 1200px;
+
+  /* Paddings */
+
+  --padding-none: 0px;
+  --padding-small: 30px;
+  --padding-normal: 40px;
+  --padding-huge: 100px;
+
+}
+
+@font-face {
+  font-family: 'Covered by your Grace';
+  src: url(../fonts/covered-by-your-grace-v7-latin-regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/open-sans-v15-latin-regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/open-sans-v15-latin-300.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/open-sans-v15-latin-700.ttf);
+  font-weight: 700;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div, section, header, footer, nav {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--light-grey);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Covered by your Grace', 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--light-grey);
+}
+
+a.button {
+  display: inline-block;
+  border: solid 1px var(--primary);
+  border-radius: 1rem;
+  text-align: center;
+  background: var(--primary);
+  padding: 10px 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+}
+
+a.button:hover {
+  background: white;
+}
+
+.container-fluid {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  max-width: var(--screen-max);
+  margin: 0 auto;
+}
+
+div.gap-small {
+  content: "";
+  padding: var(--padding-small);
+}
+
+div.gap-normal {
+  content: "";
+  padding: var(--padding-normal);
+}
+
+div.gap-huge {
+  content: "";
+  padding: var(--padding-huge);
+}
+
+.white {
+  background: white;
+}
+
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {}
+
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 1199.999px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
